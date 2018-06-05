@@ -1,0 +1,111 @@
+/* 導覽列 */ 
+header{
+	width: 100%;
+	height: 97px;
+	background: url('../img/01-header/bg_header.jpg');
+	position: fixed;
+	box-sizing: border-box;
+	z-index: 100;
+}
+
+header .container {
+	max-width: 1160px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*PC navbar */
+.menuBox .navbar {	
+	display: flex;
+	padding: 0;
+}
+
+.menuBox .navbar .logoBrand {
+	width: 212px;
+	height: 156px;
+	background: url('../img/01-header/logo-header.svg') no-repeat;
+	position: absolute;
+	top: 0;
+}
+
+.menuBox .navbar > ul{
+	width: 868px;
+	left: 212px;
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0;
+	padding: 0;
+}
+
+.menuBox .navbar > ul > li {
+	list-style: none;
+	position: relative;
+	line-height: 97px;
+}
+
+.menuBox .navbar > ul > li >a {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #445519;
+}
+
+.menuBox .navbar > ul > li >a:after {
+	content:"";
+	width: 100px;
+	height: 3px;
+	background: #445519;
+	
+	opacity:0;
+	transition:all 0.4s ease;
+	
+	position:absolute;
+	top: 97px;
+	left: -10px;
+	margin-top: -3px;
+}
+
+.menuBox .navbar > ul > li:hover >ul {
+	height: 100px;
+}
+
+.menuBox .navbar > ul > li > a:hover:after {
+	opacity:1;
+}
+
+.menuBox .navbar > ul > li > ul {
+	padding: 0;
+	text-align: left;
+	position: absolute;
+	width: 150px;
+	left: -10px;
+	top: 97px;
+	background-color: #fff;
+	transition-duration: 0.5s;
+	height: 0;
+	overflow: hidden;
+}
+
+.menuBox .navbar > ul > li > ul > li {
+	list-style: none;
+	padding: 10px 15px;
+	line-height: 1.5;
+}
+
+.menuBox .navbar > ul > li > ul > li > a {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #445519;
+}
+
+.menuBox .navbar > ul > li > ul > li:hover {
+	background: #6E8028;
+	transition:all 0.4s ease
+}
+
+.menuBox .navbar > ul > li > ul > li:hover a {
+	color: #fff;
+	transition:all 0.4s ease
+}
