@@ -370,6 +370,11 @@
 	color: #fff;
 }
 
+.fb a, .ig a {
+	text-decoration: none;
+	color: #fff;
+}
+
 /* 頁尾 */
 .footer {
 	background-color: #5F8023;
