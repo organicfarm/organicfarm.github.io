@@ -463,7 +463,7 @@
 	</script>
 
 	<!-- google map -->
-	<script>
+	<!-- <script>
 		var map;
 		function initMap() {
 			map = new google.maps.Map(document.getElementById('map'), {
@@ -478,7 +478,31 @@
                 animation: google.maps.Animation.BOUNCE,
             });
 		}
-		</script>
+	</script> -->
+
+	<script>
+		var map;
+
+		function initMap() {
+			var position = {
+				lat: 43.460713,
+				lng: 142.651062
+			};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 18,
+				center: position
+			});
+			var marker = new google.maps.Marker({
+				position: position,
+				map: map
+			});
+			var marker = new google.maps.Marker({
+				position: position,
+				map: map,
+				animation: google.maps.Animation.BOUNCE
+			});
+		}
+	</script>
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj6WGgidYPKJbAA8Fsyctu8fHrlnnMH5M&callback=initMap" async defer>
 	</script>
