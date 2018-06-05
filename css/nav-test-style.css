@@ -1,0 +1,357 @@
+/* 電腦版導覽列 */
+header{
+	width: 100%;
+	height: 98px;
+	background: url('../img/01-header/bg_header.jpg');
+	box-sizing: border-box;
+}
+
+header .container {
+	max-width: 1160px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.menuBox .navbar {	
+	display: flex;
+	padding: 0;
+	overflow:hidden;
+}
+
+.logoBrand {
+	width: 212px;
+	height: 156px;
+	background: url('../img/01-header/logo-header.svg') no-repeat;
+	position: absolute;
+    top: 0;
+	z-index: 4;
+}
+
+.menuBox .navbar > ul{
+	width: 868px;
+	left: 212px;
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0;
+    padding: 0;
+	z-index: 2;
+}
+
+.menuBox .navbar > ul > li {
+	list-style: none;
+	position: relative;
+	line-height: 98px;
+}
+
+.menuBox .navbar > ul > li >a {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #445519;
+}
+
+.menuBox .navbar > ul > li >a:after {
+	content:"";
+	width: 100px;
+	height: 3px;
+	background: #445519;
+	
+	opacity:0;
+	transition:all 0.4s ease;
+	
+	position:absolute;
+	top: 98px;
+	left: -10px;
+    margin-top: -3px;
+    z-index: 2;
+}
+
+.menuBox .navbar > ul > li:nth-child(1):hover >a:after {
+    opacity:1;
+}
+
+.menuBox .navbar > ul > li:hover >ul {
+	height: 100px;
+}
+
+.menuBox .navbar > ul > li > a:hover:after {
+	opacity:1;
+}
+
+.menuBox .navbar > ul > li > ul {
+	padding: 0;
+	text-align: left;
+	position: absolute;
+	width: 150px;
+	left: -10px;
+	top: 97px;
+	background-color: #fff;
+	transition-duration: 0.5s;
+	height: 0;
+	overflow: hidden;
+}
+
+.menuBox .navbar > ul > li > ul > li {
+	list-style: none;
+	padding: 10px 15px;
+	line-height: 1.5;
+}
+
+.menuBox .navbar > ul > li > ul > li > a {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #445519;
+}
+
+.menuBox .navbar > ul > li > ul > li:hover {
+	background: #6E8028;
+	transition:all 0.4s ease
+}
+
+.menuBox .navbar > ul > li > ul > li:hover a {
+	color: #fff;
+	transition:all 0.4s ease
+}
+
+/* 電腦版導覽列-滑動 */
+header.header-global {
+    display: none;
+	width: 100%;
+	height: 80px;
+	background: url('../img/01-header/bg_header.jpg');
+	box-sizing: border-box;
+}
+
+header .container {
+	max-width: 1140px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.menuBox .navbar-global {	
+	display: flex;
+	padding: 0;
+}
+
+.menuBox .navbar-global .logoBrand {
+    width: 100%;
+	height: 75px;
+    background: url('../img/08-contact/logo-global.svg') no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+.menuBox .navbar-global > ul{
+	width: 868px;
+	left: 212px;
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0;
+	padding: 0;
+}
+
+.menuBox .navbar-global > ul > li {
+	list-style: none;
+	position: relative;
+	line-height: 80px;
+}
+
+.menuBox .navbar-global > ul > li >a {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #445519;
+}
+
+.menuBox .navbar-global > ul > li >a:after {
+	content:"";
+	width: 100px;
+	height: 3px;
+	background: #445519;
+	
+	opacity:0;
+	transition:all 0.4s ease;
+	
+	position:absolute;
+	top: 80px;
+	left: -10px;
+    margin-top: -3px;
+    z-index: 2;
+}
+
+.menuBox .navbar-global > ul > li:nth-child(1):hover >a:after {
+    opacity:1;
+}
+
+.menuBox .navbar-global > ul > li:hover >ul {
+	height: 99px;
+}
+
+.menuBox .navbar-global > ul > li > a:hover:after {
+	opacity:1;
+}
+
+.menuBox .navbar-global > ul > li > ul {
+	padding: 0;
+	text-align: left;
+	position: absolute;
+	width: 150px;
+	left: -10px;
+	top: 80px;
+	background-color: #fff;
+	transition-duration: 0.5s;
+	height: 0;
+	overflow: hidden;
+}
+
+.menuBox .navbar-global > ul > li > ul > li {
+	list-style: none;
+	padding: 10px 15px;
+	line-height: 1.5;
+}
+
+.menuBox .navbar-global > ul > li > ul > li > a {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #445519;
+}
+
+.menuBox .navbar-global > ul > li > ul > li:hover {
+	background: #6E8028;
+	transition:all 0.4s ease
+}
+
+.menuBox .navbar-global > ul > li > ul > li:hover a {
+	color: #fff;
+	transition:all 0.4s ease
+}
+
+/* 手機導覽列 */
+.m_menubox {
+	position: fixed;
+	overflow:hidden;
+}
+
+.m_navbar {
+    background-color: #445519;
+    position: relative;
+    padding: 0;
+    height: 80px;
+    display: none;
+}
+
+.m_navbar .m_logo {
+    background: url(../img/08-contact/logo.svg) no-repeat;
+    height: 65px;
+    width: 120px;
+    background-size: contain;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY( -50%);
+}
+
+.m_navbar .m_collapse {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY( -50%);
+    float: right;
+}
+
+.m_navbar .m_collapse .line {
+    width: 40px;
+    height: 4px;
+    border: 1px solid #fff;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50% , -50%);
+    position: absolute;
+    transition: 0.45s ease-out;
+}
+
+/* 點擊動畫 */
+.m_navbar .m_collapse .line:nth-child(1) {
+    top: 25%;
+}
+
+.m_navbar .m_collapse .line:nth-child(3) {
+    top: 75%;
+}
+
+.m_navbar .m_collapse .line:nth-child(1).cross1 {
+    transform: translate( -50% , -50%) rotate(135deg);
+    top: 50%;
+}
+
+.m_navbar .m_collapse .line:nth-child(2).cross2 {
+    opacity: 0; 
+}
+
+.m_navbar .m_collapse .line:nth-child(3).cross3 {
+    transform: translate( -50% , -50%) rotate(-135deg);
+    top: 50%;
+}
+
+.m_navbar > ul {
+    background-color: #fff;
+    position: relative;
+    top: 80px;
+    z-index: 2;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.5s ease-out;
+}
+
+.m_navbar > ul.active {
+    height: 393px;
+}
+
+.m_navbar > ul > li {
+    text-align: center;
+    border-bottom: 1px solid #B2B2B2;
+    padding: 15px 10px;
+    list-style: none;
+}
+
+.m_navbar > ul > li:nth-child(1) {
+    border-top: 8px solid #808080;
+}
+
+.m_navbar > ul > li > a {
+    text-decoration: none;
+    color: #445519;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.m_navbar > ul > li > a:hover {
+    text-decoration: none;
+    color: #8DA333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    header {
+        height: 0;
+        opacity: 0;
+    }
+    
+    .m_navbar {
+        display: block;
+    }
+}
+
+
+
+
