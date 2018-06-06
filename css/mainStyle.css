@@ -398,6 +398,14 @@
 		display: table-cell;
 	}
 
+	.inner .box h2 {
+		font-size: 20px;
+	}
+
+	.inner .box p {
+		font-size: 16px;
+	 }
+
 	.inner .box {
 		display: table;
 		width: 100% !important;
