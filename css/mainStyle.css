@@ -196,13 +196,13 @@
 .inner .box h2 img {
 	display: block;
 	margin: 0 auto 15px;
+	font-weight: bold;
 	border: none;
 }
 
 .inner .box p {
     font-size: 20px;
     letter-spacing: 0.1em;
-    font-weight: bold;
     margin: 0;
     color: #293010;
  }
