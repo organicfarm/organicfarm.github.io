@@ -389,7 +389,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media only screen (max-width: 768px) {
 	.swiper-container-fade {
 		height: 450px;
 	}
@@ -397,14 +397,6 @@
 	.inner .box a{
 		display: table-cell;
 	}
-
-	.inner .box h2 {
-		font-size: 20px;
-	}
-
-	.inner .box p {
-		font-size: 16px;
-	 }
 
 	.inner .box {
 		display: table;
@@ -468,4 +460,15 @@
 	.order-word .order-sheet, .order-word .order-memo {
 		padding: 30px 20px;
 	}
+}
+
+
+@media only screen (max-width: 576px){
+	.inner .box h2 {
+	font-size: 20px;
+	}
+
+	.inner .box p {
+	font-size: 16px;
+ 	}
 }
