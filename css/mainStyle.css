@@ -71,12 +71,12 @@
 }
 
 /* 最新消息-閱讀更多按鈕 */
-.news-more {	
+#news .news-more {	
 	text-align: center;
 	margin: 10px auto 0;
 }
 
-.news-more a{
+#news .news-more a{
 	font: 25px;
 	font-weight: bold;
 	color: #000;	
@@ -86,11 +86,11 @@
 	display: inline-block;
 }
 
-.news-more a:hover {
+#news .news-more a:hover {
 	color: #fff;
 }
 
-.hvr-sweep-to-right {
+#news .hvr-sweep-to-right {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -102,7 +102,7 @@
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.hvr-sweep-to-right:before {
+#news .hvr-sweep-to-right:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -123,11 +123,11 @@
   transition-timing-function: ease-out;
 }
 
-.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+#news .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
 	color: white;
 }
 
-.hvr-sweep-to-right:hover:before {
+#news .hvr-sweep-to-right:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
