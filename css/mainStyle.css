@@ -32,7 +32,7 @@
 	 bottom: 20px;
 	 border-radius: 50%;
 	 box-shadow: 0 3px 3px rgba(0,0,0,0.16);
-	 z-index: 10;
+	 z-index: 3;
  }
 
  /* 形象輪播 */
@@ -157,7 +157,7 @@
 	height: 280px;
 	margin: 0 0 -30px;
 	position: relative;
-	z-index: 3;
+	z-index: 2;
 	transition: all 0.2s 0s ease;
 	-webkit-transition: all 0.2s 0s ease;
 	-moz-transition: all 0.2s 0s ease;
@@ -299,7 +299,7 @@
     height: 60px;
     margin-top: -22px;
     opacity: 0.6;
-    z-index: 10;
+    z-index: 2;
     cursor: pointer;
     background-size: 60px 60px;
     background-position: center;
@@ -326,6 +326,36 @@
 /* 有機商品 */
 .add_produvtBackground {
 	background: url('../img/06-product/product-bg.png');
+}
+
+#mainFood-tab{
+    background-color: #E1E2D7;
+    color: #293010;
+    font-weight: bold;
+}
+
+#vegetable-tab{
+    background-color: #C5C99B;
+    color:#293010;
+    font-weight: bold;
+}
+
+#fruit-tab{
+    background-color: #ECECDC;
+    color: #293010;
+    font-weight: bold;
+}
+
+#mainFood_info {
+    background-color: #E1E2D7;
+}
+
+#vegetable_info {
+    background-color: #C5C99B;
+}
+
+#fruit_info {
+    background-color: #ECECDC;
 }
 
 /* 農產訂購 */

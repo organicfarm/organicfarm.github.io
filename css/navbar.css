@@ -12,10 +12,10 @@ header .container {
 	position: relative;
 }
 
-.menuBox .navbar {	
+.navbar {	
 	display: flex;
 	padding: 0;
-	overflow:hidden;
+	/* overflow:hidden; */
 }
 
 .logoBrand {
@@ -27,7 +27,7 @@ header .container {
 	z-index: 4;
 }
 
-.menuBox .navbar > ul{
+.navbar > ul{
 	width: 868px;
 	left: 212px;
 	position: relative;
@@ -38,20 +38,20 @@ header .container {
 	z-index: 2;
 }
 
-.menuBox .navbar > ul > li {
+.navbar > ul > li {
 	list-style: none;
 	position: relative;
 	line-height: 98px;
 }
 
-.menuBox .navbar > ul > li >a {
+.navbar > ul > li >a {
 	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
 	color: #445519;
 }
 
-.menuBox .navbar > ul > li >a:after {
+.navbar > ul > li >a:after {
 	content:"";
 	width: 100px;
 	height: 3px;
@@ -67,19 +67,19 @@ header .container {
     z-index: 2;
 }
 
-.menuBox .navbar > ul > li:nth-child(1):hover >a:after {
+.navbar > ul > li:nth-child(1):hover >a:after {
     opacity:1;
 }
 
-.menuBox .navbar > ul > li:hover >ul {
-	height: 100px;
+.navbar > ul > li:hover >ul {
+	height: 99px;
 }
 
-.menuBox .navbar > ul > li > a:hover:after {
+.navbar > ul > li > a:hover:after {
 	opacity:1;
 }
 
-.menuBox .navbar > ul > li > ul {
+.navbar > ul > li > ul {
 	padding: 0;
 	text-align: left;
 	position: absolute;
@@ -92,25 +92,25 @@ header .container {
 	overflow: hidden;
 }
 
-.menuBox .navbar > ul > li > ul > li {
+.navbar > ul > li > ul > li {
 	list-style: none;
 	padding: 10px 15px;
 	line-height: 1.5;
 }
 
-.menuBox .navbar > ul > li > ul > li > a {
+.navbar > ul > li > ul > li > a {
 	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
 	color: #445519;
 }
 
-.menuBox .navbar > ul > li > ul > li:hover {
+.navbar > ul > li > ul > li:hover {
 	background: #6E8028;
 	transition:all 0.4s ease
 }
 
-.menuBox .navbar > ul > li > ul > li:hover a {
+.navbar > ul > li > ul > li:hover a {
 	color: #fff;
 	transition:all 0.4s ease
 }
@@ -124,18 +124,12 @@ header.header-global {
 	box-sizing: border-box;
 }
 
-header .container {
-	max-width: 1140px;
-	margin: 0 auto;
-	position: relative;
-}
-
-.menuBox .navbar-global {	
+.navbar-global {	
 	display: flex;
 	padding: 0;
 }
 
-.menuBox .navbar-global .logoBrand {
+.navbar-global .logoBrand {
     width: 100%;
 	height: 75px;
     background: url('../img/08-contact/logo-global.svg') no-repeat;
@@ -143,7 +137,7 @@ header .container {
     position: absolute;
 }
 
-.menuBox .navbar-global > ul{
+.navbar-global > ul{
 	width: 868px;
 	left: 212px;
 	position: relative;
@@ -153,20 +147,20 @@ header .container {
 	padding: 0;
 }
 
-.menuBox .navbar-global > ul > li {
+.navbar-global > ul > li {
 	list-style: none;
 	position: relative;
 	line-height: 80px;
 }
 
-.menuBox .navbar-global > ul > li >a {
+.navbar-global > ul > li >a {
 	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
 	color: #445519;
 }
 
-.menuBox .navbar-global > ul > li >a:after {
+.navbar-global > ul > li >a:after {
 	content:"";
 	width: 100px;
 	height: 3px;
@@ -182,19 +176,15 @@ header .container {
     z-index: 2;
 }
 
-.menuBox .navbar-global > ul > li:nth-child(1):hover >a:after {
+.navbar-global > ul > li:hover >a:after {
     opacity:1;
 }
 
-.menuBox .navbar-global > ul > li:hover >ul {
+.navbar-global > ul > li:hover >ul {
 	height: 99px;
 }
 
-.menuBox .navbar-global > ul > li > a:hover:after {
-	opacity:1;
-}
-
-.menuBox .navbar-global > ul > li > ul {
+.navbar-global > ul > li > ul {
 	padding: 0;
 	text-align: left;
 	position: absolute;
@@ -207,25 +197,25 @@ header .container {
 	overflow: hidden;
 }
 
-.menuBox .navbar-global > ul > li > ul > li {
+.navbar-global > ul > li > ul > li {
 	list-style: none;
 	padding: 10px 15px;
 	line-height: 1.5;
 }
 
-.menuBox .navbar-global > ul > li > ul > li > a {
+.navbar-global > ul > li > ul > li > a {
 	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
 	color: #445519;
 }
 
-.menuBox .navbar-global > ul > li > ul > li:hover {
+.navbar-global > ul > li > ul > li:hover {
 	background: #6E8028;
 	transition:all 0.4s ease
 }
 
-.menuBox .navbar-global > ul > li > ul > li:hover a {
+.navbar-global > ul > li > ul > li:hover a {
 	color: #fff;
 	transition:all 0.4s ease
 }
@@ -342,9 +332,9 @@ header .container {
 
 
 @media only screen and (max-width: 1100px) {
-    header {
+    header, header .container, header.header-global {
         height: 0;
-        opacity: 0;
+		display: none;
     }
     
     .m_navbar {
