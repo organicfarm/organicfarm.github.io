@@ -36,19 +36,19 @@
 	<div class="m_menuBox fixed-top">
 		<div class="m_navbar">
 			<a href="https://organicfarm.github.io/" class="m_logo"></a>
-			<div id="m_collapse" class="m_collapse">
+			<div id="m_collapse" class="m_collapse ">
 				<div id="line1" class="line"></div>
 				<div id="line2" class="line"></div>
 				<div id="line3" class="line"></div>
 			</div>
 			<ul id="m_menu" class="smooth">						
-				<li><a href="#about">關於心安</a>
-				<li><a href="#news">最新消息</a></li>
-				<li><a href="#activity">活動體驗</a></li>
-				<li><a href="#environment">生態環境</a></li>
-				<li><a href="#product">有機商品</a></li>
-				<li><a href="#order">農產訂購</a></li>
-				<li><a href="#contact">聯絡我們</a></li>
+				<li><a data-scroll href="#about">關於心安</a>
+				<li><a data-scroll href="#news">最新消息</a></li>
+				<li><a data-scroll href="#activity">活動體驗</a></li>
+				<li><a data-scroll href="#environment">生態環境</a></li>
+				<li><a data-scroll href="#product">有機商品</a></li>
+				<li><a data-scroll href="#order">農產訂購</a></li>
+				<li><a data-scroll href="#contact">聯絡我們</a></li>
 			</ul>
 		</div>
 	</div>
@@ -60,18 +60,18 @@
 				<a href="https://organicfarm.github.io" class="logoBrand"></a>	
 				<div class="navbar">
 					<ul class="smooth">						
-						<li><a href="#about">關於心安</a>
+						<li><a data-scroll href="#about">關於心安</a>
 							<ul>
-								<li><a href="#idea">推動理念</a></li>
-								<li><a href="#organic">有機農業</a></li>
+								<li><a data-scroll href="#idea">推動理念</a></li>
+								<li><a data-scroll href="#organic">有機農業</a></li>
 							</ul>
 						</li>
-						<li><a href="#news">最新消息</a></li>
-						<li><a href="#activity">活動體驗</a></li>
-						<li><a href="#environment">生態環境</a></li>
-						<li><a href="#product">有機商品</a></li>
-						<li><a href="#order">農產訂購</a></li>
-						<li><a href="#contact">聯絡我們</a></li>
+						<li><a data-scroll href="#news">最新消息</a></li>
+						<li><a data-scroll href="#activity">活動體驗</a></li>
+						<li><a data-scroll href="#environment">生態環境</a></li>
+						<li><a data-scroll href="#product">有機商品</a></li>
+						<li><a data-scroll href="#order">農產訂購</a></li>
+						<li><a data-scroll href="#contact">聯絡我們</a></li>
 					</ul>
 				</div>
 			</div>
@@ -85,18 +85,18 @@
 				<div id="navbar-global" class="navbar-global">
 					<a href="https://organicfarm.github.io" class="logoBrand"></a>
 					<ul class="smooth">						
-						<li><a href="#about">關於心安</a>
+						<li><a data-scroll href="#about">關於心安</a>
 							<ul>
-								<li><a href="#idea">推動理念</a></li>
-								<li><a href="#organic">有機農業</a></li>
+								<li><a data-scroll href="#idea">推動理念</a></li>
+								<li><a data-scroll href="#organic">有機農業</a></li>
 							</ul>
 						</li>
-						<li><a href="#news">最新消息</a></li>
-						<li><a href="#activity">活動體驗</a></li>
-						<li><a href="#environment">生態環境</a></li>
-						<li><a href="#product">有機商品</a></li>
-						<li><a href="#order">農產訂購</a></li>
-						<li><a href="#contact">聯絡我們</a></li>
+						<li><a data-scroll href="#news">最新消息</a></li>
+						<li><a data-scroll href="#activity">活動體驗</a></li>
+						<li><a data-scroll href="#environment">生態環境</a></li>
+						<li><a data-scroll href="#product">有機商品</a></li>
+						<li><a data-scroll href="#order">農產訂購</a></li>
+						<li><a data-scroll href="#contact">聯絡我們</a></li>
 					</ul>
 				</div>
 			</div>
@@ -298,13 +298,13 @@
 			<div class="container">
 				<ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
 					<li class="nav-item">
-						<a class="nav-link active h4  mb-0" id="mainFood-tab" data-toggle="pill" href="#mainFood" role="tab" aria-controls="mainFood" aria-selected="true">主食類</a>
+						<a class="nav-link active h4 mb-0" id="mainFood-tab" data-toggle="pill" href="#mainFood" role="tab" aria-controls="mainFood" aria-selected="true">主食類</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link h4  mb-0" id="vegetable-tab" data-toggle="pill" href="#vegetable" role="tab" aria-controls="vegetable" aria-selected="false">蔬菜類</a>
+						<a class="nav-link h4 mb-0" id="vegetable-tab" data-toggle="pill" href="#vegetable" role="tab" aria-controls="vegetable" aria-selected="false">蔬菜類</a>
 					</li>
-					<li class="nav-item h4  mb-0">
-						<a class="nav-link" id="fruit-tab" data-toggle="pill" href="#fruit" role="tab" aria-controls="fruit" aria-selected="false">水果類</a>
+					<li class="nav-item">
+						<a class="nav-link h4 mb-0" id="fruit-tab" data-toggle="pill" href="#fruit" role="tab" aria-controls="fruit" aria-selected="false">水果類</a>
 					</li>
 				</ul>
 				<!-- 分頁內容 -->
@@ -488,15 +488,18 @@
 		<p>© Copyright 2018 Organic Farm, Making By Yu Ling , Non-Commercial.</p>
 	</div>
 
-	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.min.js"></script>
-	<script src="js/smooth-scrolling.js"></script>
-
-	<!-- scroll-smooth -->
+	<!-- scroll-test -->
+	<script src="js/smooth-scroll.min.js"></script>
 	<script>
-		$(".smooth").localScroll();
+		var scroll = new SmoothScroll('a[href*="#about"]',{speed:1000});
+		var scroll = new SmoothScroll('a[href*="#idea"]',{speed:1000});
+		var scroll = new SmoothScroll('a[href*="#organic"]',{speed:1000});
+		var scroll = new SmoothScroll('a[href*="#news"]',{speed:1000});
+		var scroll = new SmoothScroll('a[href*="#activity"]',{speed:1000});
+		var scroll = new SmoothScroll('a[href*="#environment"]',{speed:1000});
+		var scroll = new SmoothScroll('a[href*="#product"]',{speed:1000});
+		var scroll = new SmoothScroll('a[href*="#order"]',{speed:1000});
+		var scroll = new SmoothScroll('a[href*="#contact"]',{speed:1000});
 	</script>
 	
 	<!-- Swiper JS -->
@@ -589,7 +592,8 @@
 			oLine1.classList.toggle("cross1");
 			oLine2.classList.toggle("cross2");
 			oLine3.classList.toggle("cross3");
-		}        
+		}
+       
 	</script>
 
 	<!-- google map -->
