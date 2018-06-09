@@ -5,6 +5,14 @@
 	font-family: Helvetica, Arial, 微軟正黑體, sans-serif;
 }
 
+/* anchor-navbar定位 */
+.anchor {
+	display: block;
+	height: 79px; /* 高度與navbar相同, 用來補上被navbar覆蓋的高度 */
+	margin-top: -79px; /* 高度與navbar相同, 將頁面內容拉近, 不要造成額外空白 */
+	visibility: hidden; /* 隱藏 */
+}
+
 /* 字體設定 */
 .title {
 	/* font-family: Helvetica, Arial, source-han-serif-tc , 微軟正黑體, sans-serif; */
@@ -56,7 +64,7 @@
 	background: rgba(0,0,0,0)
 }
 
-#news a {
+.news a {
 	text-decoration: none;
 	color: #000;
 }
@@ -71,12 +79,12 @@
 }
 
 /* 最新消息-閱讀更多按鈕 */
-#news .news-more {	
+.news .news-more {	
 	text-align: center;
 	margin: 10px auto 0;
 }
 
-#news .news-more a{
+.news .news-more a{
 	font: 25px;
 	font-weight: bold;
 	color: #000;	
@@ -86,11 +94,11 @@
 	display: inline-block;
 }
 
-#news .news-more a:hover {
+.news .news-more a:hover {
 	color: #fff;
 }
 
-#news .hvr-sweep-to-right {
+.news .hvr-sweep-to-right {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -102,7 +110,7 @@
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-#news .hvr-sweep-to-right:before {
+.news .hvr-sweep-to-right:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -123,11 +131,11 @@
   transition-timing-function: ease-out;
 }
 
-#news .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+.news .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
 	color: white;
 }
 
-#news .hvr-sweep-to-right:hover:before {
+.news .hvr-sweep-to-right:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
