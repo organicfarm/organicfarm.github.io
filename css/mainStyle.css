@@ -69,8 +69,17 @@
 	color: #000;
 }
 
+/* 縮小效果 */
+.grow_in {
+    transition: all .2s ease-in-out;
+}
+
+.grow_in:hover {
+	transform: scale(0.9);
+}
+
 /* 放大效果 */
-.grow {
+.grow{
     transition: all .2s ease-in-out;
 }
 
@@ -364,6 +373,25 @@
 
 #fruit_info {
     background-color: #ECECDC;
+}
+
+/* 有機商品-underslider */
+#mainFood_info .product-scroll, #vegetable_info .product-scroll, #fruit_info .product-scroll{
+	display: none;
+}
+
+#mainFood_info .product-scroll > ul > li, #vegetable_info .product-scroll > ul > li, #fruit_info .product-scroll > ul > li {
+	list-style: none;
+}
+
+@media only screen and (max-width: 371px) {
+	#mainFood_info .product-scroll, #vegetable_info .product-scroll, #fruit_info .product-scroll {
+		display: block;
+	}
+
+	#mainFood_info .product-normal, #vegetable_info .product-normal, #fruit_info .product-normal {
+		display: none;
+	}
 }
 
 /* 農產訂購 */

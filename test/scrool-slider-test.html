@@ -12,7 +12,27 @@
     <!-- Bootstrap css -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
     <style>
+        #mainFood_info .product-scroll{
+            display: none;
+        }
+
+        #mainFood_info .product-scroll > ul > li {
+            list-style: none;
+        }
+
+        @media (max-width: 372px) {
+            .product-scroll{
+                display: block;
+            }
+
+            .product-normal{
+                display: none;
+            }
+        }
         
     </style>
 
@@ -37,6 +57,7 @@
 				<div class="tab-content" id="pills-tabContent">     
                     <div class="tab-pane fade show active" id="mainFood" role="tabpanel" aria-labelledby="mainFood-tab">                                             
                         <div id="mainFood_info" class="container">
+                            
                             <div class="product-normal">
                                 <div class="row  py-4 px-3 ">
                                     <div class="col-sm-6 col-12 col-md-4 px-4">                           
@@ -73,40 +94,49 @@
                                 </div> 
                             </div>
 
-                            <div class="menu-info1-1">
+                            <div class="product-scroll">
                                 <div class="default-slider">
-                                    <ul>
+                                    <ul class="row  py-4 px-3 ">
                                         <li>
-                                            <div class="menu-info1-w">
-                                                <p style="font-size:20px; color:#595757; font-weight:bold;">繽紛杯子蛋糕(限店取)</p>
-                                                <p style="font-size:16px; color:#595757">口味：皇家藍莓、戀戀京都、甜心草莓、可可香頌、酸甜黑醋栗。原價60/顆</p>
-                                                <p style="font-size:18px; color:#595757; font-weight:bold">貼心價
-                                                    <br> 55元/顆</p>
-                                                <div class="menu-info-p">
-                                                    <img class="img-fluid" src="img/06-product/fruit/mango.jpg" alt="">
-                                                </div>
+                                            <div class="col-12">                           
+                                                <p class="font-weight-bold text-center">稻米</p>
+                                                <img class="img-fluid grow" src="img/06-product/main/rice.jpg" alt="">
+                                                <p class="mt-2 text-left">選用台南13號香米品種，富有芋頭香的白飯，粒粒美味！</p>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="menu-info1-w">
-                                                <p style="font-size:20px; color:#595757; font-weight:bold;">法國經典生巧克力</p>
-                                                <p style="font-size:16px; color:#595757">法國產區巧克力苦甜香濃、甜度適中，更有淡淡酒香！</p>
-                                                <p style="font-size:18px; color:#595757; font-weight:bold">濃情價
-                                                    <br> 550元/盒</p>
-                                                <div class="menu-info-p">
-                                                    <img class="img-fluid" src="img/06-product/main/pumpkin.jpg" alt="">
-                                                </div>
+                                            <div class="col-12">                           
+                                                <p class="font-weight-bold text-center">芋頭</p>
+                                                <img class="img-fluid grow" src="img/06-product/main/taro.jpg" alt="">
+                                                <p class="mt-2 text-left">口感綿密，含有黏質，可促進肝解毒，鬆弛緊張的肌肉和血管。</p>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="menu-info1-w">
-                                                <p style="font-size:20px; color:#595757; font-weight:bold;">法式馬卡龍</p>
-                                                <p style="font-size:16px; color:#595757">口味：巧克力、抹茶、香橙、藍莓、覆盆子、伯爵紅茶、柚香、黑醋栗、焦糖海鹽、百香果。 原價50/顆</p>
-                                                <p style="font-size:18px; color:#595757; font-weight:bold">貼心價
-                                                    <br> 35元/顆</p>
-
-                                                    <img  class="img-fluid" src="img/06-product/main/corn.jpg" alt="">
-                                                </div>
+                                            <div class="col-12">                           
+                                                <p class="font-weight-bold text-center">番薯</p>
+                                                <img class="img-fluid grow" src="img/06-product/main/sweet-potato.jpg" alt="">
+                                                <p class="mt-2 text-left">降低血中膽固醇， 預防動脈硬化和糖尿病，吃得心安理得。</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="col-12">                           
+                                                <p class="font-weight-bold text-center">玉米</p>
+                                                <img class="img-fluid grow" src="img/06-product/main/corn.jpg" alt="">
+                                                <p class="mt-2 text-left">鮮甜可口，含有黃體素、玉米黃質可對抗眼睛老化。</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="col-12">                           
+                                                <p class="font-weight-bold text-center">南瓜</p>
+                                                <img class="img-fluid grow" src="img/06-product/main/pumpkin.jpg" alt="">
+                                                <p class="mt-2 text-left">性溫，味甘無毒，營養豐富，有不可忽視的食療作用！</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="col-12">                           
+                                                <p class="font-weight-bold text-center">菱角</p>
+                                                <img class="img-fluid grow" src="img/06-product/main/water-chestnut.jpg" alt="">
+                                                <p class="mt-2 text-left">可替代穀類食物，有益腸胃，非常適合體質虛弱者、老人與成長中的孩子。</p>
                                             </div>
                                         </li>
                                     </ul>
@@ -202,12 +232,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
-    <script src="js/smooth-scroll.js"></script>
     <script src="js/unslider-min.js"></script>
 
     <script>
     jQuery(document).ready(function ($) {
         $('.default-slider').unslider({
+            
             arrows: {
                 //  Unslider default behaviour
                 prev: '<a class="unslider-arrow prev"><i class="fas fa-chevron-circle-left fa-lg"></i></a>',
