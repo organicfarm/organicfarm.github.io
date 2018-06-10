@@ -599,7 +599,16 @@
 			oLine2.classList.toggle("cross2");
 			oLine3.classList.toggle("cross3");
 		}
-       
+		
+		// 點擊選單項目後收起選單列
+		oM_menu.onclick = function() {
+			oM_menu.classList.remove("active");
+
+			// 漢堡條動畫
+			oLine1.classList.toggle("cross1");
+			oLine2.classList.toggle("cross2");
+			oLine3.classList.toggle("cross3");
+		}     
 	</script>
 
 	<!-- google map -->
